@@ -33,6 +33,34 @@ body {
   width: 100%;
   z-index: 2;
 }
+.navbar .desktopMenu .desktopMenuListItem {
+  cursor: pointer;
+  margin: 1rem;
+}
+.navbar .desktopMenu .desktopMenuListItem:hover {
+  border-bottom: 3px solid #ff0;
+  color: #ff0;
+  padding-bottom: 0.5rem;
+}
+.navbar .desktopMenuBtn {
+  align-items: center;
+  background: #fff;
+  border: none;
+  border-radius: 2rem;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar .desktopMenuBtn .desktopMenuImg {
+  height: 1rem;
+  margin: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 1rem;
+}
 
 .intro {
   display: flex;

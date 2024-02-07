@@ -30,6 +30,35 @@ body{
     top: 0;
     width: 100%;
     z-index: 2;
+    .desktopMenu {
+        .desktopMenuListItem {
+            cursor: pointer;
+            margin: 1rem;
+            &:hover {
+                border-bottom: 3px solid #ff0;
+                color: #ff0;
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+    .desktopMenuBtn {
+        align-items: center;
+        background: #fff;
+        border: none;
+        border-radius: 2rem;
+        color: #000;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        padding: 0 1rem;
+        transition: background-color .3s ease,color .3s ease;
+        .desktopMenuImg {
+            height: 1rem;
+            margin: 1rem;
+            object-fit: cover;
+            width: 1rem;
+        }
+    }
 }
 .intro {
     display: flex;
