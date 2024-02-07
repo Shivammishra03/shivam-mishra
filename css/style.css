@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -11,6 +12,11 @@ body {
   color: white;
   overflow: hidden;
   overflow-y: scroll;
+}
+
+.logo {
+  font-style: italic;
+  color: #ff0;
 }
 
 .navbar {
@@ -35,4 +41,72 @@ body {
   max-width: 75rem;
   overflow: hidden;
   width: 100vw;
+}
+.intro .intro-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 700;
+  height: 100vh;
+  justify-content: center;
+  padding: 2rem;
+  width: 100vw;
+}
+.intro .intro-content .hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+.intro .intro-content .introName {
+  color: #ff0;
+}
+.intro .intro-content .introPara {
+  font-size: medium;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.intro .intro-content .btn {
+  align-items: center;
+  background: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 0.75rem 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #000;
+}
+.intro .intro-content .btnImg {
+  align-items: center;
+  display: flex;
+  height: 1rem;
+  justify-content: center;
+  margin: 0 0.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.intro .bg {
+  -webkit-user-drag: none;
+  animation: animate 8s ease-in-out infinite;
+  background-position: 50%;
+  border: 3px solid #fff;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  box-shadow: 0 0 35px #ff0;
+  height: 250px;
+  margin-top: 10rem;
+  position: relative;
+  right: 5rem;
+  width: 250px;
+}
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 50% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }/*# sourceMappingURL=style.css.map */
