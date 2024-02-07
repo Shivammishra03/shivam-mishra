@@ -2,45 +2,68 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
 }
 body{
-    color: #ededed;
+    background: rgb(30, 30,30);
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
 }
-.header {
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 100%;
-    padding: 20px 10px;
-    background: transparent;
-    justify-content: space-between;
-    display: flex;
+// .header {
+//     position: fixed;
+//     top: 0;
+//     left:0;
+//     width: 100%;
+//     padding: 20px 10px;
+//     background: transparent;
+//     justify-content: space-between;
+//     display: flex;
+//     align-items: center;
+//     z-index: 100;
+//     .logo {
+//         position: relative;
+//         font-size: 25px;
+//         color: #fff;
+//         text-decoration: none;
+//         font-weight: 600;
+//     }
+//     .navbar {
+//         a {
+//             display: inline-block;
+//             font-size: 25px;
+//             color: #fff;
+//             text-decoration: none;
+//             font-weight: 500;
+//             margin-left: 35px;
+//             transition: .3s;
+//             &:hover {
+//                 color: #0ef;
+//             }
+//         }
+//     }
+// }
+.navbar {
     align-items: center;
-    z-index: 100;
-    .logo {
-        position: relative;
-        font-size: 25px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 600;
-    }
-    .navbar {
-        a {
-            display: inline-block;
-            font-size: 25px;
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
-            margin-left: 35px;
-            transition: .3s;
-            &:hover {
-                color: #0ef;
-            }
-        }
-    }
+    background: #282828;
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 75rem;
+    padding: 1rem 2rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
-.home {
-    position: relative;
-
+.intro {
+    display: flex;
+    height: calc(100vh - 4rem);
+    margin: 0 auto;
+    max-width: 75rem;
+    overflow: hidden;
+    width: 100vw;
 }
-
