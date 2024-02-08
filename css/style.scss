@@ -60,6 +60,11 @@ body{
         }
     }
 }
+.menu {
+    display: none;
+    height: 1.8rem;
+    object-fit: cover;
+}
 .intro {
     display: flex;
     height: calc(100vh - 4rem);
@@ -136,3 +141,5 @@ body{
         }
     }   
 }
+
+@import 'responsive';
