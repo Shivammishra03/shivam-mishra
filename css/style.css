@@ -14,9 +14,41 @@ body {
   overflow-y: scroll;
 }
 
+.logo img {
+  height: 3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .logo {
   font-style: italic;
   color: #ff0;
+}
+
+.navMenu {
+  background: #1e1e1e;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 15rem;
+  padding: 0.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 4rem;
+  z-index: 2;
+}
+.navMenu .listItem {
+  background: #1e1e1e;
+  color: #fff;
+  margin: 0.25 rem;
+  padding: 0.5rem 3rem;
+}
+.navMenu .active {
+  border-bottom: 3px solid #ff0;
+  color: #ff0;
+  padding-bottom: 0.5rem;
 }
 
 .navbar {
@@ -146,24 +178,100 @@ body {
   }
 }
 
+#about {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 65rem;
+  overflow: hidden;
+  text-align: center;
+  width: 100vw;
+}
+#about .aboutMe-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-top: 3rem;
+}
+#about .about-description {
+  font-size: 1rem;
+  font-weight: 200;
+  max-width: 60rem;
+  padding: 0 2rem;
+}
+
+#contact {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 60rem;
+  min-height: calc(100vh - 4rem);
+  padding-top: 3rem;
+  text-align: center;
+  width: 100vw;
+}
+#contact .contactPageTitle {
+  font-size: 3rem;
+  font-weight: 300;
+}
+#contact .clientsDesc {
+  font-size: medium;
+  font-weight: 200;
+  padding: 1rem;
+}
+#contact .contactForm {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  max-width: 60rem;
+  width: 90vw;
+}
+#contact .email, #contact .message, #contact .name {
+  background: #282828;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: medium;
+  margin: 0.5rem;
+  max-width: 40rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+#contact .submitbtn {
+  background: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 2rem;
+  padding: 0.75rem 3.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #000;
+}
+
 @media screen and (max-width: 650px) {
   .intro {
     align-items: center;
     flex-direction: column-reverse;
+    height: auto !important;
   }
   .intro-content {
     margin-top: -3rem;
-    padding: 1rem;
+    padding: 1rem !important;
     text-align: center;
   }
   .hello {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
   .introPara {
     font-size: 1rem;
   }
   .bg {
-    border-radius: 50% !important;
+    border-radius: 50%;
     height: 150px !important;
     margin-top: 4rem !important;
     right: 0 !important;
