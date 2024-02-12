@@ -253,6 +253,17 @@ body {
   color: #000;
 }
 
+.footer-section {
+  align-items: center;
+  background: #282828;
+  display: flex;
+  font-size: small;
+  font-weight: 300;
+  height: 4rem;
+  justify-content: center;
+  width: 100vw;
+}
+
 @media screen and (max-width: 650px) {
   .intro {
     align-items: center;
